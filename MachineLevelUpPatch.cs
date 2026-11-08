@@ -20,7 +20,7 @@ namespace Mod_PandaPlayerMachineEnhancedMod
             Chara pc;
             try { pc = EMono.pc; } catch { return; }
             if (pc == null || __instance != pc) return;
-            if (!IsMachineRace(pc)) return;
+            if (!pc.IsMachine) return;
 
             int newLevel = pc.LV + 1;
             if (newLevel <= 0) return;
@@ -48,21 +48,5 @@ namespace Mod_PandaPlayerMachineEnhancedMod
             }
         }
 
-        private static bool IsMachineRace(Chara c)
-        {
-            try
-            {
-                return c.IsMachine;
-            }
-            catch { }
-            try
-            {
-                var id = c.race?.id;
-                if (string.Equals(id, "machine", StringComparison.OrdinalIgnoreCase))
-                    return true;
-            }
-            catch { }
-            return false;
-        }
     }
 }
