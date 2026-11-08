@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Meta>
+  <title>Panda's Player Machine Enhance Mod</title>
+  <id>Mod_PandaPlayerMachineEnhancedMod</id>
+  <author>Now Happy Panda</author>
+  <loadPriority>100</loadPriority>
+  <description>Allow player machine character to gain 1 Miscreation level feat per 5 levels
+  Allow player machine character to upgrade Miscreation by Mani</description>
+  <version>0.23.358</version>
+</Meta>
