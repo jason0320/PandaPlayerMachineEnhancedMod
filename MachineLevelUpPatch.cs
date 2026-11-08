@@ -52,10 +52,7 @@ namespace Mod_PandaPlayerMachineEnhancedMod
         {
             try
             {
-                var prop = typeof(Chara).GetProperty("IsMachine",
-                    BindingFlags.Public | BindingFlags.Instance);
-                if (prop != null && prop.PropertyType == typeof(bool))
-                    return (bool)prop.GetValue(c);
+                return c.HasTag(CTAG.machine);
             }
             catch { }
             try
