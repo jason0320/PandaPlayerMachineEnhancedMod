@@ -52,7 +52,7 @@ namespace Mod_PandaPlayerMachineEnhancedMod
         {
             try
             {
-                return c.HasTag(CTAG.machine);
+                return c.IsMachine;
             }
             catch { }
             try
